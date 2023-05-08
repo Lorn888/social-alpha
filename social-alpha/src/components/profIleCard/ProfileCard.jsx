@@ -4,7 +4,7 @@ import Cover from "../../img/cover.jpeg";
 
 const ProfileCard = () => {
   return (
-    <div className="PrfileCard rounded-[1.5rem] flex flex-col relative gap-[1rem] overflow-x-clip">
+    <div className="PrfileCard rounded-[1.5rem] flex flex-col relative gap-[1rem] overflow-x-clip bg-[rgba(255,255,255,0.64)]">
       <div className="ProfileImages relative flex flex-col items-center justify-center">
         <img src={Cover} alt="Cover" className=" w-full" />
         <img
@@ -31,8 +31,11 @@ const ProfileCard = () => {
             <span className="text-[rgba(36,45,73,0.65)] text-[13px]">Follwers</span>
           </div>
         </div>
-      <hr className="w-[85%] border-[#cfcdcd]" />
+      <hr className="w-[85%] border-[#cfcdcd] p-1" />
       </div>
+      <span className="items-center font-bold text-orange-400 mb-[1rem] cursor-pointer self-center">
+        My Profile
+      </span>
     </div>
   );
 };
