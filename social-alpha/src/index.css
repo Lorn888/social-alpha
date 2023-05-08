@@ -24,3 +24,10 @@
   background-color: #f3f3f3;
   padding: 1rem 1rem;
 }
+
+.button:hover{
+  cursor: pointer;
+  color: var(--orange);
+  background: transparent;
+  border: 2px solid var(--orange);
+}
