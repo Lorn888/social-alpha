@@ -5,15 +5,15 @@ import img4 from "../../img/IMG_4.png"
 
 export const Followers = [
     {
-        name: "Andrew Thomas", username: "AndrewThomas", img: "img1"
+        name: "Andrew Thomas", username: "AndrewThomas", img: img1
     },
     {
-        name: "Sophie Martin", username: "SophieMartin", img: "img2"
+        name: "Sophie Martin", username: "SophieMartin", img: img2
     },
     {
-        name: "David Lee", username: "DavidLee", img: "img3"
+        name: "David Lee", username: "DavidLee", img: img3
     },
     {
-        name: "Emily Chen", username: "EmilyChen", img: "img4"
+        name: "Emily Chen", username: "EmilyChen", img: img4
     }
 ]
