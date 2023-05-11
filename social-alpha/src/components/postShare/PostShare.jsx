@@ -60,9 +60,9 @@ const PostShare = () => {
 
         {image && 
         
-        <div className="previewImage">
-          <UilTimes />
-          <img src={image.image} alt="" />
+        <div className="previewImage relative">
+          <UilTimes onClick={()=>setImage(null)} className='absolute right-[1rem] top-[0.5rem] cursor-pointer'/>
+          <img src={image.image}  />
         </div>
         
         }
