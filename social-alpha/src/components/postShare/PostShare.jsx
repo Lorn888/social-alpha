@@ -20,7 +20,7 @@ const PostShare = () => {
   };
   return (
     <div className="PostShare flex gap-[1ren] bg-[rgba(255,255,255,0.64)] p-[1rem] rounded-[1rem]">
-      <img src={img} className="rounded-[50%] w-[3rem] h-[3rem]" />
+      <img src={img} className="rounded-[50%] object-cover w-[3rem] h-[3rem]" />
       <div className="flex  flex-col w-[90%] gap-[1rem]">
         <input
           type="text"
@@ -62,7 +62,7 @@ const PostShare = () => {
         
         <div className="previewImage relative">
           <UilTimes onClick={()=>setImage(null)} className='absolute right-[1rem] top-[0.5rem] cursor-pointer'/>
-          <img src={image.image}  />
+          <img src={image.image}  className=" w-[100%] max-h-[20rem] object-cover rounded-[0.5rem]"/>
         </div>
         
         }
