@@ -1,7 +1,7 @@
-import postPic1 from '../../img/postPic1.jpg'
-import postPic2 from '../../img/postPic2.jpg'
-import postPic3 from '../../img/postPic3.jpg'
-import postPic4 from '../../img/postPic4.jpg'
+import postPic1 from '../../img/postPic1.jpeg'
+import postPic2 from '../../img/postPic2.jpeg'
+import postPic3 from '../../img/postPic3.jpeg'
+import postPic4 from '../../img/postPic4.jpeg'
 
 export const PostsData = [
     {
