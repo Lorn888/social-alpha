@@ -1,15 +1,17 @@
 import React from "react";
 
-const Post = ({data}) => {
-  return <div className="Pos">
-	<img src={data.img}/>
+const Post = ({ data }) => {
+  return (
+    <div className="Pos">
+      <img src={data.img} />
 
-    <div className="postReact">
+      <div className="postReact">
         <img src="" alt="" />
         <img src="" alt="" />
         <img src="" alt="" />
+      </div>
     </div>
-  </div>;
+  );
 };
 
 export default Post;
