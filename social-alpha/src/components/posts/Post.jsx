@@ -8,7 +8,7 @@ const Post = ({ data }) => {
     <div className="Post flex flex-col p-[1rem] bg-[rgba(255,255,255,0.64)] rounded-[1rem] gap-[1rem]">
       <img src={data.img} className="w-[100%] max-h-[20rem] object-cover rounded-[0.5rem]"/> 
 
-      <div className="postReact ">
+      <div className="postReact flex items-start gap-[1rem] ">
         <img src={data.liked ? Heart : NotLike} />
         <img src={Comment} />
         <img src={Share} />
