@@ -15,6 +15,10 @@ const RightSide = () => {
         <img src={Comment} className="w-[1.5rem] h-[1.5rem]" />
       </div>
       <TrendCard />
+
+      <button className="h-[3rem] w-[80%] self-center h-[2rem] p-[5px] px-[20px] text-[12px] text-white bg-[orange] flex items-center justify-center rounded-[0.5rem] hover:cursor-pointer hover:text-[#fca61f] hover:bg-transparent hover:border-[2px] hover:border-[#fca61f] ">
+        Share
+      </button>
     </div>
   );
 };
