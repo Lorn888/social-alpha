@@ -4,7 +4,7 @@ import { Followers } from "../Data/FollowersData";
 const FollowersCard = () => {
   return (
     <div className="FollowesCard w-full rounded-[0.7rem] gap-[1rem] flex flex-col text-[13px]">
-      <h3 className="">Who is following you?</h3>
+      <h3 className=" font-bold">Who is following you?</h3>
 
       {Followers.map((follower, id) => {
         return (

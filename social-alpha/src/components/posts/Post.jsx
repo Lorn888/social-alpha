@@ -14,7 +14,7 @@ const Post = ({ data }) => {
         <img src={Share} />
       </div>
 
-      <span>{data.likes} likes</span>
+      <span className=" text-[rgba(36,45,73,0.65)] text-[12px]">{data.likes} likes</span>
 
       <div className="details">
         <span>

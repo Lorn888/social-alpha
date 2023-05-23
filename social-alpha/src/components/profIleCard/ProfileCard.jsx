@@ -3,6 +3,8 @@ import profilePic from "../../img/profilePic.jpeg";
 import Cover from "../../img/cover.jpeg";
 
 const ProfileCard = () => {
+
+  const ProfilePage = true
   return (
     <div className="PrfileCard rounded-[1.5rem] flex flex-col relative gap-[1rem] overflow-x-clip bg-[rgba(255,255,255,0.64)]">
       <div className="ProfileImages relative flex flex-col items-center justify-center">
@@ -30,12 +32,32 @@ const ProfileCard = () => {
             <span className="font-bold">1</span>
             <span className="text-[rgba(36,45,73,0.65)] text-[13px]">Follwers</span>
           </div>
+
+          {ProfilePage && (
+            <>
+          <div className="vl h-[50px] border-r-[2px] border-[#cfcdcd]">
+
+          </div>
+
+          <div className="follow flex flex-col gap-[0.4rem] items-center justify-center  font-display">
+              <span className="font-bold">
+                3 
+              </span>
+              <span className="text-[rgba(36,45,73,0.65)] text-[13px]">
+                Posts
+              </span>
+            </div>
+            </>
+          )}
         </div>
       <hr className="w-[85%] border-[#cfcdcd] p-1" />
       </div>
+      {ProfilePage? '':
+      
       <span className="items-center font-bold text-orange-400 mb-[1rem] cursor-pointer self-center">
         My Profile
       </span>
+    }
     </div>
   );
 };
