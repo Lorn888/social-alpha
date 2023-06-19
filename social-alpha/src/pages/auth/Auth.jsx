@@ -20,6 +20,41 @@ const Auth = () => {
   );
 };
 
+const Login = () => {
+  return (
+    <form
+        action=""
+        className="infoForm authForm bg-[rgba(255,255,255,0.64)] flex flex-col justify-center items-center gap-[2rem] p-[1rem] rounded-[1rem]"
+      >
+        <h3 className=" font-display font-bold">Log in</h3>
+        <div className=" flex gap-[1rem] h-[2rem] w-[100%]  justify-center items-center m-1">
+          <input
+            type="text"
+            className="infoInput border-none outline-none bg-[rgba(40,52,62,0.07)] rounded-[8px] p-[20px] flex-1"
+            name="userName"
+            placeholder="User Name"
+          />
+        </div>
+        <div className=" flex gap-[1rem] h-[2rem] w-[100%]  justify-center items-center m-1">
+          <input
+            type="text"
+            className="infoInput border-none outline-none bg-[rgba(40,52,62,0.07)] rounded-[8px]  p-[20px] flex-1"
+            name="password"
+            placeholder="Password"
+          />
+        </div>
+
+        <div>
+          <span className=" text-[12px]"> Don't have an account? Signup!</span>
+        </div>
+        <button type="submit" className="h-[2rem] px-[20px] text-white bg-[orange] flex items-center justify-center rounded-[0.5rem] hover:cursor-pointer hover:text-[#fca61f] hover:bg-transparent hover:border-[2px] hover:border-[#fca61f] self-end">
+          Login
+        </button>
+      </form>
+  )
+}
+
+
 function Signup() {
   return (
     <div className="a-right">
@@ -27,7 +62,7 @@ function Signup() {
         action=""
         className="infoForm authForm bg-[rgba(255,255,255,0.64)] flex flex-col justify-center items-center gap-[2rem] p-[1rem] rounded-[1rem]"
       >
-        <h3 className="">Sign up</h3>
+        <h3 className="font-display font-bold">Sign up</h3>
         <div className=" flex gap-[1rem] h-[2rem] w-[100%] justify-center items-center m-1">
           <input
             type="text"
@@ -66,7 +101,7 @@ function Signup() {
         </div>
 
         <div>
-          <span> Already ahve an account? Login!</span>
+          <span className=" text-[12px]"> Already ahve an account? Login!</span>
         </div>
         <button type="submit" className="h-[2rem] px-[20px] text-white bg-[orange] flex items-center justify-center rounded-[0.5rem] hover:cursor-pointer hover:text-[#fca61f] hover:bg-transparent hover:border-[2px] hover:border-[#fca61f] self-end">
           Signup
