@@ -28,7 +28,7 @@ function Signup() {
         className="infoForm authForm bg-[rgba(255,255,255,0.64)] flex flex-col justify-center items-center gap-[2rem] p-[1rem] rounded-[1rem]"
       >
         <h3 className="">Sign up</h3>
-        <div className=" flex gap-[1rem] h-[2rem] w-[100%] items-center justify-center">
+        <div className=" flex gap-[1rem] h-[2rem] w-[100%] justify-center items-center m-1">
           <input
             type="text"
             placeholder="First Name"
@@ -42,7 +42,7 @@ function Signup() {
             name="lastName"
           />
         </div>
-        <div className=" flex gap-[1rem] h-[2rem] w-[100%] items-center justify-center">
+        <div className=" flex gap-[1rem] h-[2rem] w-[100%]  justify-center items-center m-1">
           <input
             type="text"
             className="infoInput border-none outline-none bg-[rgba(40,52,62,0.07)] rounded-[8px] p-[20px] flex-1"
@@ -50,7 +50,7 @@ function Signup() {
             placeholder="User Name"
           />
         </div>
-        <div className=" flex gap-[1rem] h-[2rem] w-[100%] items-center justify-center">
+        <div className=" flex gap-[1rem] h-[2rem] w-[100%]  justify-center items-center m-1">
           <input
             type="text"
             className="infoInput border-none outline-none bg-[rgba(40,52,62,0.07)] rounded-[8px]  p-[20px] flex-1"
