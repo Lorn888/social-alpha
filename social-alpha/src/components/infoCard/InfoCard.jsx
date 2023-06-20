@@ -8,6 +8,7 @@ const InfoCard = () => {
         <h4 className=" font-bold">Your Info</h4>
         <div className=" hover:cursor-pointer">
           <UilPen className="w-[2rem] h-[1.2rem] " />
+          
         </div>
       </div>
       <div className="info">
