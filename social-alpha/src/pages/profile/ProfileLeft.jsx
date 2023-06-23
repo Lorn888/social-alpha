@@ -10,6 +10,7 @@ const ProfileLeft = () => {
         <InfoCard/>
         <FollowersCard/>
     </div>
+    
     )
 }
 

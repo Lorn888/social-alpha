@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { UilPen } from "@iconscout/react-unicons";
 import ProfileModal from "../profileModal/ProfileModal";
 
 const InfoCard = () => {
-
-  const [modalOpened, setmodalOpened] = useState(false)
+  const [modalOpened, setModalOpened] = useState(false);
   return (
     <div className="InoCard flex flex-col gap-[0.75rem] bg-[rgba(255,255,255,0.64)] p-[1rem] rounded-[1rem] w-[90%]">
       <div className="infoHead flex justify-between items-center">
         <h4 className=" font-bold">Your Info</h4>
         <div className=" hover:cursor-pointer">
-          <UilPen className="w-[2rem] h-[1.2rem] " onClick={()=>setmodalOpened(true)}/>
-          <ProfileModal modalOpened={modalOpened} setmodalOpened={setmodalOpened}/>
+          <UilPen
+            className="w-[2rem] h-[1.2rem] "
+            onClick={() => setModalOpened(true)}
+          />
+          <ProfileModal
+            modalOpened={modalOpened}
+            setmodalOpened={setModalOpened}
+          />
         </div>
       </div>
       <div className="info">
