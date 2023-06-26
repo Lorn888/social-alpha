@@ -1,34 +1,31 @@
-import { useDisclosure } from "@mantine/hooks";
+import PropTypes from "prop-types";
 import { Modal, useMantineTheme } from "@mantine/core";
 
-function ProfileModal() {
-  const [opened, { open, close }] = useDisclosure(false);
+function ProfileModal({ modalOpened, setModalOpened }) {
   const theme = useMantineTheme();
 
   return (
-    <>
-      <Modal
-        opened={opened}
-        onClose={close}
-        title="Authentication"
-        overlayProps={{
-          color:
-            theme.colorScheme === "dark"
-              ? theme.colors.dark[9]
-              : theme.colors.gray[2],
-          opacity: 0.55,
-          blur: 3,
-        }}
-      >
-        <form className="infoForm">
-          <h3>Your info</h3>
-        </form>
-      </Modal>
-
-      <Group position="center">
-        <Button onClick={open}>Open modal</Button>
-      </Group>
-    </>
+    <Modal
+      overlayColor={
+        theme.colorScheme === "dark"
+          ? theme.colors.dark[9]
+          : theme.colors.gray[2]
+      }
+      overlayOpacity={0.55}
+      overlayBlur={3}
+      opened={modalOpened}
+      onClose={() => setModalOpened(false)}
+    >
+      <form className="infoForm authForm bg-[rgba(255,255,255,0.64)] flex flex-col justify-center items-center gap-[2rem] p-[1rem] rounded-[1rem]">
+        <h3>Your info</h3>
+      </form>
+    </Modal>
   );
 }
-export default ProfileModal
+
+ProfileModal.propTypes = {
+  modalOpened: PropTypes.bool.isRequired,
+  setModalOpened: PropTypes.func.isRequired,
+};
+
+export default ProfileModal;

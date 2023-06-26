@@ -1,4 +1,3 @@
-import React from 'react'
 import FollowersCard from '../../components/followersCard/FollowersCard'
 import InfoCard from '../../components/infoCard/InfoCard'
 import LogoSearch from '../../components/logoSearch/LogoSearch'

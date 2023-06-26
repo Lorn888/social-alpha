@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../../img/g-h.png";
 
 const Auth = () => {
